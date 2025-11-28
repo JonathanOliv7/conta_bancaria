@@ -26,10 +26,6 @@ public class Client {
 		return money;
 	}
 
-	public void setMoney(double money) {
-		this.money = money;
-	}
-
 	public double addValue(double money) {
 		return this.money += money;
 	}

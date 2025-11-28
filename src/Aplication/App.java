@@ -25,7 +25,7 @@ public class App {
 		case 'y':
 			System.out.print("Enter initial deposit value:");
 			money = sc.nextInt();
-			client.setMoney(money);
+			client.addValue(money);
 			System.out.print("\n");
 
 		default:
