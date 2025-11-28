@@ -9,7 +9,11 @@ public class Client {
 		this.account = account;
 		this.name = name;
 	}
-
+	public Client(int account, String name, double initialDeposit) {
+		this.account = account;
+		this.name = name;
+		addValue(initialDeposit);
+	}
 	public int getAccount() {
 		return account;
 	}
@@ -26,12 +30,12 @@ public class Client {
 		return money;
 	}
 
-	public double addValue(double money) {
-		return this.money += money;
+	public void addValue(double money) {
+		 this.money += money;
 	}
 
-	public double removeValue(double money) {
-		return this.money -= money + 5;
+	public void removeValue(double money) {
+		 this.money -= money + 5;
 	}
 
 	public String ToString() {

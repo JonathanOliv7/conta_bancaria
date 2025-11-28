@@ -20,16 +20,17 @@ public class App {
 		System.out.print("Is there na initial deposit (y/n)?");
 		char verification = sc.next().charAt(0);
 		Client client = new Client(account, name);
-		double money = 0;
+		double initialDeposit;
+		double money;
 		switch (verification) {
 		case 'y':
 			System.out.print("Enter initial deposit value:");
-			money = sc.nextInt();
-			client.addValue(money);
+			initialDeposit = sc.nextInt();
+			client.addValue(initialDeposit);
 			System.out.print("\n");
 
 		default:
-		}
+		}	initialDeposit = 0;
 //Mostrando dados da conta para o usuário:	
 		System.out.println("Account data:");
 		System.out.println(client.ToString());
